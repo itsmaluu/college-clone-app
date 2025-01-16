@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> College Enrollment Application </title>
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=ABeeZee'>
+</head>
+<body>
+
+<form>
+    <h2>College Enrollment Application</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+
+    <label>Marital Status:</label>
+    <div class="marital-status">
+        <label for="single" class="marital-label">Single</label>
+        <input type="radio" id="single" name="marital" value="single" checked>
+        
+        <label for="married" class="marital-label">Married</label>
+        <input type="radio" id="married" name="marital" value="married">
+    </div>
+
+    <label for="emergency">Emergency Contact Name:</label>
+    <input type="text" id="emergency" name="emergency" required>
+
+    
+    <div class="emergency-number">
+         <label for="emergency">Emergency Contact Number:</label>
+         <input type="text" id="emergency" name="emergency" required>
+    </div>
+
+    <label for="program">Desired Program of Study:</label>
+    <select id="program" name="program" required>
+        <option value="">Select Program</option>
+        <option value="computer_science">Computer Science</option>
+        <option value="business_admin">Business Administration</option>
+        <option value="engineering">Engineering</option>
+        <option value="nursing">Nursing</option>
+        <option value="psychology">Psychology</option>
+        <option value="biology">Biology</option>
+        <option value="history">History</option>
+        <option value="graphic_design">Graphic Design</option>
+        <option value="music">Music</option>
+        <option value="architecture">Architecture</option>
+        <option value="culinary_arts">Culinary Arts</option>
+    </select>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="state">State:</label>
+    <select id="state" name="state" required>
+        <option value="">Select State</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="DC">District of Columbia</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <option value="ID">Idaho</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="IA">Iowa</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="ME">Maine</option>
+        <option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MI">Michigan</option>
+        <option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option>
+        <option value="MO">Missouri</option>
+        <option value="MT">Montana</option>
+        <option value="NE">Nebraska</option>
+        <option value="NV">Nevada</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NM">New Mexico</option>
+        <option value="NY">New York</option>
+        <option value="NC">North Carolina</option>
+        <option value="ND">North Dakota</option>
+        <option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option>
+        <option value="OR">Oregon</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option>
+        <option value="TX">Texas</option>
+        <option value="UT">Utah</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WA">Washington</option>
+        <option value="WV">West Virginia</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WY">Wyoming</option>
+    </select>
+    
+   <!--i took this list from chatgpt, i asked the ai to generate a list of all the states instead of letting the students writing them 
+    in case of typos.--> 
+    
+
+
+    <label>Academic History</label>
+
+    <label for="highschool">High School Attended:</label>
+    <input type="text" id="highschool" name="highschool" required>
+
+    <label for="gradyear">Year of High School Graduation:</label>
+    <input type="number" id="gradyear" name="gradyear" min="1999" max="2024" required>
+
+    <label for="college">College / University (if applicable):</label>
+    <input type="text" id="college" name="college">
+
+    <label for="collegeyear">Year of College Graduation (if applicable):</label>
+    <input type="number" id="collegeyear" name="collegeyear" min="1999" max="2099">
+
+    <label for="terms">I agree to the terms and conditions:</label>
+    <input type="checkbox" id="terms" name="terms" required>
+
+
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
